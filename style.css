@@ -1,0 +1,86 @@
+.slider-container {
+    margin: 0 auto;
+    padding: 10px;
+    width: 900px;
+    height: 500px;
+    background-color: yellow;
+}
+
+.slider-content {
+    width: 850px;
+    height: 450px;
+    border: 1px solid black;
+    margin: 10px auto;
+    overflow: hidden;
+
+}
+.slide-img {
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: contain
+}
+
+.slider-controls {
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.controls {
+    padding: 3px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.controls:hover {
+    border: 1px solid black;
+    color: yellow;
+    background-color: black;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+/* anim */
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+.fade-in-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+/* @keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+} */
